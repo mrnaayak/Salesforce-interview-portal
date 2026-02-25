@@ -1,8 +1,8 @@
-# 💡 Salesforce Interview Q&A Portal
+#  Salesforce Interview Q&A Portal
 
 A web-based portal for managing and learning Salesforce interview questions and answers with role-based access (Admin and User modes).
 
-## 📋 Project Overview
+##  Project Overview
 
 This application provides:
 - **Admin Dashboard**: Full CRUD functionality to manage interview questions and answers
@@ -10,7 +10,7 @@ This application provides:
 - **Secure Login**: Authentication system for admin access
 - **Responsive Design**: Works on desktop and mobile devices
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 AI Website/
@@ -29,14 +29,14 @@ AI Website/
 └── README.md           # This file
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 1. Open `index.html` in a web browser
 2. Choose your role:
    - Click **Admin Dashboard** to access admin panel (requires login)
    - Click **User Learning** to access learning mode (no login required)
 
-## 👨‍💼 Admin Features
+##  Admin Features
 
 - Create new interview questions
 - Update existing questions and answers
@@ -44,24 +44,24 @@ AI Website/
 - View all questions in dashboard
 - Secure logout functionality
 
-## 👤 User Features
+##  User Features
 
 - View all interview questions
 - Read-only access to questions and answers
 - Practice interview preparation
 - Navigate back to home portal
 
-## 🔐 Authentication
+##  Authentication
 
 Admin features are protected by a login system. Users need to authenticate before accessing admin functionality.
 
-## 📝 Notes
+##  Notes
 
 - The project is ready to be organized into the `/pages`, `/scripts`, and `/styles` folders
 - All file references need to be updated when files are moved to their respective folders
 - The application uses browser localStorage for data persistence
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - HTML5
 - JavaScript (Vanilla)
