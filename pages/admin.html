@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Salesforce Interview Q&A</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <h3 class="nav-title"> Admin Dashboard</h3>
+            <div style="display: flex; gap: 10px; align-items: center;">
+                <span id="adminName" style="color: var(--text-dark); font-weight: 500;"></span>
+                <button onclick="AdminAuth.logout()" class="home-link" style="padding: 8px 16px; margin: 0; cursor: pointer; border: none;">
+                    Logout
+                </button>
+            </div>
+        </div>
+
+        <header>
+            <h1>Admin Panel - Manage Q&A</h1>
+            <p>Full access to create, update, and delete interview questions</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Add/Edit Form Section -->
+            <section class="form-section">
+                <h2>Add/Edit Question & Answer</h2>
+                <form id="qaForm">
+                    <div class="form-group">
+                        <label for="questionInput">Question:</label>
+                        <input type="text" id="questionInput" placeholder="Enter your question" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="answerInput">Answer:</label>
+                        <textarea id="answerInput" placeholder="Enter your answer" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="categoryInput">Category:</label>
+                        <select id="categoryInput" required>
+                            <option value="">Select Category</option>
+                            <option value="SOQL">SOQL</option>
+                            <option value="Apex">Apex</option>
+                            <option value="Lightning">Lightning</option>
+                            <option value="Configuration">Configuration</option>
+                            <option value="Security">Security</option>
+                            <option value="Database">Database</option>
+                            <option value="Integration">Integration</option>
+                        </select>
+                    </div>
+                    <div class="button-group">
+                        <button type="submit" class="btn btn-primary" id="submitBtn">Add Question</button>
+                        <button type="button" class="btn btn-secondary" id="cancelBtn" style="display:none;">Cancel Edit</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Search and Filter Section -->
+            <section class="search-section">
+                <input type="text" id="searchInput" placeholder="Search questions...">
+                <select id="filterCategory">
+                    <option value="">All Categories</option>
+                    <option value="SOQL">SOQL</option>
+                    <option value="Apex">Apex</option>
+                    <option value="Lightning">Lightning</option>
+                    <option value="Configuration">Configuration</option>
+                    <option value="Security">Security</option>
+                    <option value="Database">Database</option>
+                    <option value="Integration">Integration</option>
+                </select>
+            </section>
+
+            <!-- Questions List Section -->
+            <section class="qa-section">
+                <h2>Questions & Answers</h2>
+                <div id="qaList" class="qa-list">
+                    <!-- Questions will be dynamically added here -->
+                </div>
+                <div id="emptyMessage" class="empty-message">
+                    No questions found. Add your first question above!
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="../scripts/admin-script.js"></script>
+</body>
+</html>
