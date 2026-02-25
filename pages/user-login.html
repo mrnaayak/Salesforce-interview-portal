@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login - Salesforce Interview Q&A</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <style>
+        .login-container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .form-section {
+            background: var(--light-bg);
+            padding: 30px;
+            border-radius: 8px;
+            margin: 0;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .form-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 1em;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(0, 112, 210, 0.1);
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 25px;
+        }
+
+        .btn-login {
+            flex: 1;
+            padding: 12px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-login:hover {
+            background-color: #0058a7;
+            transform: translateY(-2px);
+        }
+
+        .message {
+            padding: 12px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .message.error {
+            background-color: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffc107;
+            display: block;
+        }
+
+        .message.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #28a745;
+            display: block;
+        }
+
+        .help-text {
+            text-align: center;
+            margin-top: 20px;
+            color: var(--text-light);
+            font-size: 0.9em;
+        }
+
+        .help-text a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .help-text a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="home-link">← Back to Home</a><br><br>
+
+        <header>
+            <h1> User Login</h1>
+            <p>Login with your admin account to access learning mode</p>
+        </header>
+
+        <div class="main-content">
+            <section class="login-container">
+                <div class="form-section">
+                    <h2>User Login</h2>
+                    <div id="loginMessage" class="message"></div>
+                    <form id="userLoginForm">
+                        <div class="form-group">
+                            <label for="loginEmail">Email:</label>
+                            <input type="email" id="loginEmail" placeholder="admin@salesforce.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Password:</label>
+                            <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                        </div>
+                        <div class="button-group">
+                            <button type="submit" class="btn-login">Login</button>
+                        </div>
+                    </form>
+                    <div class="help-text">
+                        <p>Don't have an account?</p>
+                        <p><a href="admin-login.html">Create one as Admin →</a></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="../scripts/user-login-script.js"></script>
+</body>
+</html>

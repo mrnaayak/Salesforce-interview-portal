@@ -1,0 +1,53 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is Salesforce?",
+      "answer": "Salesforce is a cloud-based Customer Relationship Management (CRM) platform that helps organizations manage customer interactions, sales processes, and business relationships in real-time.",
+      "category": "Configuration",
+      "createdAt": "01/01/2024"
+    },
+    {
+      "id": 2,
+      "question": "What is SOQL?",
+      "answer": "SOQL (Salesforce Object Query Language) is a query language that allows you to retrieve records from Salesforce using syntax similar to SQL. It can only query one object at a time.",
+      "category": "SOQL",
+      "createdAt": "01/02/2024"
+    },
+    {
+      "id": 3,
+      "question": "Explain Apex Triggers",
+      "answer": "Apex Triggers are pieces of code that execute before or after specific database events on a particular sObject in Salesforce. They can be used to update records, validate data, or perform business logic.",
+      "category": "Apex",
+      "createdAt": "01/03/2024"
+    },
+    {
+      "id": 4,
+      "question": "What is Lightning Web Components?",
+      "answer": "Lightning Web Components (LWC) is a modern web components framework for building fast and scalable web applications using standard JavaScript, HTML, and CSS.",
+      "category": "Lightning",
+      "createdAt": "01/04/2024"
+    },
+    {
+      "id": 5,
+      "question": "What is the difference between SOQL and SOSL?",
+      "answer": "SOQL (Salesforce Object Query Language) searches data in a single sObject, while SOSL (Salesforce Object Search Language) can search for text across multiple fields and objects simultaneously.",
+      "category": "SOQL",
+      "createdAt": "01/05/2024"
+    },
+    {
+      "id": 6,
+      "question": "What is a Trigger in Salesforce?",
+      "answer": "A Trigger is an Apex code that executes before or after a specific sObject database activity occurs (insert, update, delete, undelete). Triggers can be used to perform custom actions when specific conditions are met.",
+      "category": "Apex",
+      "createdAt": "25/2/2026"
+    },
+    {
+      "id": 7,
+      "question": "What is a Trigger in Salesforce?",
+      "answer": "A Trigger is an Apex code that executes before or after a specific sObject database activity occurs (insert, update, delete, undelete). Triggers can be used to perform custom actions when specific conditions are met.",
+      "category": "Apex",
+      "createdAt": "25/2/2026"
+    }
+  ]
+}
